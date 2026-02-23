@@ -77,11 +77,11 @@ ______________________________
 
 doctor-appointment-system/
 │
-├── eureka-server/ # Service Discovery (Eureka Server)
-├── api-gateway/ # API Gateway (Single entry point for all requests)
-├── auth-service/ # Authentication & JWT Security Service
-├── doctor-service/ # Doctor Management Microservice
-├── patient-service/ # Patient Management Microservice
-├── booking-service/ # Appointment Booking Microservice
-├── payment-service/ # Payment Processing Service (Stripe Integration)
-└── README.md # Project Documentation
+├── eureka-server/        # Service Discovery (Eureka Server)
+├── api-gateway/          # API Gateway (Single entry point for all requests)
+├── auth-service/         # Authentication & JWT Security Service
+├── doctor-service/       # Doctor Management Microservice
+├── patient-service/      # Patient Management Microservice
+├── booking-service/      # Appointment Booking Microservice
+├── payment-service/      # Payment Processing Service (Stripe Integration)
+└── README.md             # Project Documentation
