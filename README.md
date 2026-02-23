@@ -16,14 +16,13 @@ ________________________
 -------------------------------
 It consists of the following services:
 
-🔐 Authentication Service – Handles user registration, login, and JWT-based authentication & authorization.
-👨‍⚕️ Doctor Service – Manages doctor profiles, availability, and related information.
-🧑 Patient Service – Manages patient records and details.
-📅 Booking Service – Handles appointment scheduling and communicates with other services.
-💳 Payment Service – Processes payments using Stripe integration.
-🌐 API Gateway – Acts as a single entry point for all client requests and routes them to appropriate services.
-🧭 Eureka Server – Service discovery mechanism for dynamic service registration and communication.
-
+- 🔐 **Authentication Service** – Handles user registration, login, and JWT-based authentication & authorization.
+- 👨‍⚕️ **Doctor Service** – Manages doctor profiles, availability, and related information.
+- 🧑 **Patient Service** – Manages patient records and details.
+- 📅 **Booking Service** – Handles appointment scheduling and communicates with other services.
+- 💳 **Payment Service** – Processes payments using Stripe integration.
+- 🌐 **API Gateway** – Acts as a single entry point for all client requests and routes them to appropriate services.
+- 🧭 **Eureka Server** – Service discovery mechanism for dynamic service registration and communication.
 ________________________________
 🔄 Communication Flow
 ---------------------------
@@ -78,11 +77,11 @@ ______________________________
 
 doctor-appointment-system/
 │
-├── eureka-server/        # Service Discovery (Eureka Server)
-├── api-gateway/          # API Gateway (Single entry point for all requests)
-├── auth-service/         # Authentication & JWT Security Service
-├── doctor-service/       # Doctor Management Microservice
-├── patient-service/      # Patient Management Microservice
-├── booking-service/      # Appointment Booking Microservice
-├── payment-service/      # Payment Processing Service (Stripe Integration)
-└── README.md             # Project Documentation
+├── eureka-server/ # Service Discovery (Eureka Server)
+├── api-gateway/ # API Gateway (Single entry point for all requests)
+├── auth-service/ # Authentication & JWT Security Service
+├── doctor-service/ # Doctor Management Microservice
+├── patient-service/ # Patient Management Microservice
+├── booking-service/ # Appointment Booking Microservice
+├── payment-service/ # Payment Processing Service (Stripe Integration)
+└── README.md # Project Documentation
