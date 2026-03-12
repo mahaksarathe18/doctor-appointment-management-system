@@ -1,0 +1,30 @@
+package com.authservices.authservicejune.service;
+
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.algorithms.Algorithm;
+import org.springframework.stereotype.Service;
+
+import java.util.Date;
+
+@Service
+public class JwtService {
+
+    private static final String SECRET_KEY = "secret12345";
+    private static final long EXPIRATION_TIME = 86400000;
+
+    public String generateToken(String username,String role){
+        return JWT.create()
+                .withSubject(username)
+                .withClaim("role",role)
+                .withIssuedAt( new Date())
+                .withExpiresAt(new Date(System.currentTimeMillis()+EXPIRATION_TIME))
+                .sign(Algorithm.HMAC256(SECRET_KEY));
+    }
+    public String validateTokenAndRetrieveSubject(String rawToken){
+        return JWT.require(Algorithm.HMAC256(SECRET_KEY))
+                .build()
+                .verify(rawToken)
+                .getSubject();
+    }
+
+}
